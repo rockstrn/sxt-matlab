@@ -1,0 +1,6 @@
+%查询摄像头和支持的格式
+%在这里红外摄像头为1，支持的格式为，不确定
+%这'YUY2_256x288'    'YUY2_320x288'    'YUY2_352x288'    'YUY2_360x288'    'YUY2_640x576'    'YUY2_704x576'    'YUY2_720x576'
+cam_info = imaqhwinfo('winvideo');
+cam_info.DeviceInfo.DeviceID
+cam_info.DeviceInfo.SupportedFormats
